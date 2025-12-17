@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Restaurant',
+    'rest_framework',
+    'restaurant',
 ]
 
 MIDDLEWARE = [
@@ -50,8 +51,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'LittleLemon.urls'
-WSGI_APPLICATION = 'LittleLemon.wsgi.application'
+ROOT_URLCONF = 'littlelemon.urls'
+WSGI_APPLICATION = 'littlelemon.wsgi.application'
 
 TEMPLATES = [
     {
@@ -74,14 +75,14 @@ TEMPLATES = [
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
-'''DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-}'''
+}
 
-DATABASES = {  
+'''DATABASES = {  
     'default': {  
         'ENGINE': 'django.db.backends.mysql',  
         'NAME': 'littlelemon',  
@@ -93,7 +94,7 @@ DATABASES = {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
         }  
     }  
-}
+}'''
 
 
 

@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class ReservationConfig(AppConfig):
-    name = 'Restaurant'
+    name = 'restaurant'
